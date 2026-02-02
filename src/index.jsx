@@ -17,7 +17,6 @@ import React, { StrictMode } from 'react';
 // eslint-disable-next-line import/no-unresolved
 import { createRoot } from 'react-dom/client';
 
-import Header from '@edx/frontend-component-header';
 import { FooterSlot } from '@edx/frontend-component-footer';
 
 import messages from './i18n';
@@ -27,6 +26,7 @@ import './index.scss';
 import Head from './head/Head';
 
 import AppRoutes from './routes/AppRoutes';
+import HeaderSlot from './plugin-slots/HeaderSlot';
 
 const rootNode = createRoot(document.getElementById('root'));
 subscribe(APP_READY, () => {
@@ -34,7 +34,7 @@ subscribe(APP_READY, () => {
     <StrictMode>
       <AppProvider store={configureStore()}>
         <Head />
-        <Header />
+        <HeaderSlot />
         <main id="main">
           <AppRoutes />
         </main>
