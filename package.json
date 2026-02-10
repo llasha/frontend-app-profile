@@ -28,6 +28,9 @@
   "browserslist": [
     "extends @edx/browserslist-config"
   ],
+  "overrides": {
+    "@types/react": "18.3.28"
+  },  
   "dependencies": {
     "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/frontend-component-footer": "npm:@llasha/frontend-component-footer@14.6.0-ka.1",
@@ -65,8 +68,8 @@
     "universal-cookie": "4.0.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.8.1",
-    "@commitlint/config-angular": "19.8.1",
+    "@commitlint/cli": "18.6.1",
+    "@commitlint/config-angular": "18.6.1",
     "@edx/browserslist-config": "^1.1.1",
     "@edx/reactifex": "2.2.0",
     "@openedx/frontend-build": "^14.3.3",
